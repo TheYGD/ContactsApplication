@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.text.Font?>
+
+<Pane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.fidiym.contacts.controllers.ContactsController">
+   <children>
+      <TextField fx:id="searchingTextField" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="70.0" minWidth="1000.0" pickOnBounds="false" prefHeight="70.0" prefWidth="1000.0" promptText="Search for a contact" style="-fx-padding: 20; -fx-background-color: #e6e6e6;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <font>
+            <Font name="Calibri" size="20.0" />
+         </font>
+      </TextField>
+      <ScrollPane layoutY="70.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="630.0" minWidth="1000.0" prefHeight="630.0" prefWidth="1000.0">
+         <content>
+            <TilePane fx:id="contactsTilePane" hgap="50.0" maxWidth="780.0" prefColumns="3" prefHeight="628.0" prefTileHeight="250.0" prefTileWidth="200.0" prefWidth="780.0" style="-fx-background-color: #fefdfaff;" vgap="40.0">
+               <padding>
+                  <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+               </padding>
+            </TilePane>
+         </content>
+         <padding>
+            <Insets left="110.0" top="1.0" />
+         </padding>
+      </ScrollPane>
+      <ImageView fx:id="searchIcon" fitHeight="25.0" fitWidth="25.0" layoutX="961.0" layoutY="23.0" opacity="0.5" pickOnBounds="true" preserveRatio="true" x="-5.0">
+         <image>
+            <Image url="@../../images/search_img.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="addContactButton" fitHeight="60.0" fitWidth="60.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true" x="910.0" y="540.0">
+         <image>
+            <Image url="@../../images/add_contact_img.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
