@@ -13,3 +13,5 @@ Number must must fit the following pattern:
 
 It is possible to edit and delete contacts.
 The contact list is being serialized and saved to the "contacts.bin" file.
+
+The main class is pl\fidiym\contacts\ContactsApplication.java
