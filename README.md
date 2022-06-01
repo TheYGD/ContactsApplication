@@ -7,8 +7,8 @@ You can choose whether the contact is a person or an organization. After the dat
 is added and from now you can search for it by typing a pattern into the search field.
 
 Number must must fit the following pattern:
-- it has to contatain only digits, which can be seperated with spaces,
-- one of the 2 first number sections (digits seperated with space) can be placed within parentheses (),
+- it has to contatain only digits, which can be seperated with space or dash,
+- one of the 2 first number sections (digits seperated with space/dash) can be placed within parentheses (),
 - there is no specified number's length
 
 It is possible to edit and delete contacts.
